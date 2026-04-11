@@ -1,0 +1,9 @@
+@theme {
+  /* navbar system tokens */
+  --navbar-height: 4rem;
+  --navbar-padding-x: 1rem;
+  --navbar-padding-x-lg: 1.5rem;
+  --z-navbar: 40;
+  --z-mobile-drawer: 50;
+  --shadow-navbar: 0 1px 2px rgb(0 0 0 / 0.06);
+}

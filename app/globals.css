@@ -1,26 +1,78 @@
+@config "../tailwind.config.ts";
 @import "tailwindcss";
+@import "../styles/tokens.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: 220 20% 98%;
+  --bg-subtle: 220 20% 96%;
+
+  --surface: 0 0% 100%;
+  --surface-elevated: 0 0% 100%;
+
+  --text: 222 35% 12%;
+  --text-muted: 220 10% 35%;
+  --text-subtle: 220 8% 45%;
+
+  --border: 220 12% 88%;
+  --border-strong: 220 12% 78%;
+
+  --brand: 222 85% 55%;
+  --brand-fg: 0 0% 100%;
+
+  --success: 142 72% 40%;
+  --success-fg: 0 0% 100%;
+
+  --warning: 38 92% 50%;
+  --warning-fg: 222 35% 12%;
+
+  --danger: 0 84% 60%;
+  --danger-fg: 0 0% 100%;
+
+  --ring: 222 85% 55%;
+  --radius: 14px;
+
+  --shadow: 222 20% 10%;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+[data-theme="midnight"]{
+  --bg: 222 25% 10%;
+  --bg-subtle: 222 25% 12%;
+
+  --surface: 222 25% 14%;
+  --surface-elevated: 222 25% 17%;
+
+  --text: 210 25% 92%;
+  --text-muted: 215 12% 70%;
+  --text-subtle: 215 10% 60%;
+
+  --border: 222 18% 22%;
+  --border-strong: 222 18% 30%;
+
+  --brand: 200 90% 60%;
+  --brand-fg: 222 25% 10%;
+
+  --success: 142 70% 45%;
+  --success-fg: 222 25% 10%;
+
+  --warning: 40 90% 55%;
+  --warning-fg: 222 25% 10%;
+
+  --danger: 0 80% 60%;
+  --danger-fg: 222 25% 10%;
+
+  --ring: 200 90% 60%;
+  --shadow: 0 0% 0%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+@layer base {
+  html {
+    background: hsl(var(--bg));
+    color: hsl(var(--text));
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  :focus-visible{
+    outline: 2px solid hsl(var(--ring));
+    outline-offset:2px;
+  }
 }
