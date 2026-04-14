@@ -8,7 +8,7 @@ const Navbar = () => {
   //TODO: Make it fixed only for home, otherwise make it relative
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-(--z-navbar) border-b backdrop-blur-sm" style={{ 
+      className="relative top-0 left-0 right-0 z-(--z-navbar) border-b backdrop-blur-sm" style={{ 
       backgroundColor: 'hsl(var(--bg) / 0.8)',
       borderColor: 'hsl(var(--border))'
     }}
