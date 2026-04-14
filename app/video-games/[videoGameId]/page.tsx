@@ -1,4 +1,4 @@
-import VideoGame from "@/components/pages/video-game";
+import VideoGameDetails from "@/components/pages/video-game";
 
 
-export default VideoGame;
+export default VideoGameDetails;

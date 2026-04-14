@@ -1,1 +1,1 @@
-export {default} from './VideoGame'
+export {default} from './VideoGameDetails'
