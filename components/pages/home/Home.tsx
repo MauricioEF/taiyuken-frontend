@@ -1,6 +1,6 @@
 import FeaturedProjects from '@/components/featured-projects';
 import Hero from '@/components/hero';
-import ContactForm from '@/components/contact-Form';
+import ContactForm from '@/components/contact-form';
 
 const Home = () => {
   return (

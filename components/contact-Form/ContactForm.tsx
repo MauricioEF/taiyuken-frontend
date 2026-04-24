@@ -35,7 +35,6 @@ const ContactForm = () => {
         }
 
         setError('');
-        console.log(fields);
     }
 
     //TODO: Prevent background color to change when autofilling
