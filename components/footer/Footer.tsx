@@ -1,14 +1,17 @@
 import { FaGamepad } from "react-icons/fa";
-import { AiFillTikTok } from "react-icons/ai";
-const Footer:React.FC = () => {
+import { AiFillInstagram, AiFillTikTok } from "react-icons/ai";
+const Footer: React.FC = () => {
     return (<footer className="w-full bg-surface py-5">
         <div className="w-[80vw] mx-auto grid grid-cols-4 gap-5 mt-5 pb-4 border-b border-border">
             <div className="col-span-1 flex flex-col gap-4 ">
                 <div className="flex items-center gap-3">
-                    <FaGamepad className="text-4xl text-brand"/> <span className="text-xl">Taiyuken Dev</span>
+                    <FaGamepad className="text-4xl text-brand" /> <span className="text-xl">Taiyuken Dev</span>
                 </div>
                 <p className="text-text-subtle">Working hard to create amazing games, one experience at a time!</p>
-                <AiFillTikTok className="text-3xl text-text-muted cursor-pointer"/>
+                <div className="flex flex-row gap-1">
+                    <AiFillTikTok className="text-3xl text-text-muted cursor-pointer" />
+                    <AiFillInstagram className="text-3xl text-text-muted cursor-pointer" />
+                </div>
             </div>
             <div>
                 <p className="text-xl">Products</p>
